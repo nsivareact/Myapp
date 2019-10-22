@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #s1{
+            margin: 20px;
+            color: brown;
+            float: right;
+        }
+        </style>
+        
+        <script>
+            function f1()
+            {
+                var str1= document.getElementById("t1").value;
+                var str2= document.getElementById("t2").value;
+
+                if(str1 != '' && str2 != '' && str1==str2)
+                {
+                    alert("you entered details are currect");
+                   // alert(str1);
+                    
+                }
+                else{
+                    alert("you entered wrong details");
+                }
+
+            }
+            
+        
+        
+        
+        </script>
+    </head>
+    <body>
+        <div id="s1">
+        <input type="text" id="t1" placeholder="User Name"> <br><br>
+        <input type="password" id="t2" placeholder="password">
+        <!--<button type="submit" >click on me</button>-->
+        <button onclick="f1()">click on me</button>
+    </div>
+    </body>
+</html>

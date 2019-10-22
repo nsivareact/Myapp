@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            
+          function withdraw(bal,dep_amt,with_amt,cur_bal)
+          {
+              var bal1 = bal + dep_amt;
+              document.write("balance is:"+bal1);
+
+             /* var car1 = bal+dep_amt;
+              document.writeln("car1 is"+car1);*/
+
+              var dep1 = bal1-bal;
+              document.writeln("deposit amt"+dep1)
+
+          var cur_bal1 = bal1- with_amt; 
+          document.write("current balance is:"+cur_bal1); 
+
+        /*  var dep_amt1 = cur_bal1- bal;
+          document.writeln(dep_amt1)*/
+
+          
+
+           
+          
+        
+
+          
+        
+        
+        }
+        withdraw(32000,2000,5000);
+        </script>
+
+    </head>
+    <body>
+        <label for="bal">Balance</label>
+        <input type="text" id="bal" >
+        
+    </body>
+</html>

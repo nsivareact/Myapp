@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        header{
+                font-size: 30px;
+                text-align: center;
+                background-color: chartreuse;
+                width: 92%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 15px;
+                
+            }
+            #navigationlist ul li{
+            list-style-type: none;
+            float: left;
+            width: 200px;
+            height: 55px;
+            background: aqua;
+            font-size: 25px;
+          /*  display: inline-block;*/
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin-top: -19px;
+
+         }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul li a:hover{
+            background-color: green;
+            color: white;
+        }
+        ul li ul li{
+            display: none;
+
+        }
+        ul li:hover ul li{
+            display:block;
+        }
+       /* .navi ul{
+            float: left;
+            font-size: 25px;
+            text-decoration: none;
+            list-style-type: none;
+            display: block;
+            margin-top: 100px;
+            background-color: chartreuse;
+            text-align: center;*/
+            
+
+            
+            
+            
+        }
+        body nav{
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div{
+            padding: 5px;
+        }
+       article{
+           float: right;
+           margin: 5px;
+           border-style: double;
+           margin-top:100px;margin-right: 100px;
+       }
+       #button1{
+           margin-left: 60px;
+       }
+       #marquee1{
+          
+           background-color: mediumspringgreen;
+           color: red;
+           width: 100%;
+           margin-left:20px;
+           margin-right:20px;
+       }
+       #aboutbank{
+           margin : 80px;
+       }
+       body{
+           padding: 5px;
+       }
+       </style>
+       <script>
+        function f1()
+        {
+            var str1= document.getElementById("USRENAME").value;
+            var str2= document.getElementById("Password").value;
+
+            if(str1 != '' && str2 != '' && str1==str2)
+            {
+              //  alert("you entered details are currect");
+              
+               // alert(str1);
+                
+            }
+            else{
+                alert("you entered wrong details");
+            }
+
+        }
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <h1>A NEW BANK IN INDIA</h1>
+        </header>
+        <nav>
+            <div id="navigationlist">
+                <ul>
+                    <li><a href="#">Services</a>
+                        <ul>
+                            <li><a href="#">Personal Internet bank</a></li>
+                            <li><a href="#">Corporate internet banking</a></li>
+                            <li><a href="#">merchant Acquiring business-pos</a></li>
+                            <li><a href="#">Online Tax/Paymant/receipt/chalana</a></li>
+                            <li><a href="#">Printing</a></li>
+                            
+                        </ul>                               
+                    </li>
+                    <li><a href="#">ANBI Anyware</a>
+                        <ul>
+                                <li><a href="#">ANBI saral</a></li>
+                                <li><a href="#">ANBI Personal</a></li>
+                                <li><a href="#">SBA Corporate</a></li>
+                              <!--  <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>-->
+                            </ul>                
+                    </li>
+                    <li><a href="#">FAQs</a>
+                        <ul>
+                                <li><a href="#">Personal Internet bank FAQs</a></li>
+                                <li><a href="#">Corporate internet banking FAQs</a></li>
+                                <li><a href="#">merchant Acquiring business-pos FAQs</a></li>
+                                <li><a href="#">Online Tax/Paymant/receipt/chalana FAQs</a></li>
+                                <li><a href="#">Printing FAQs</a></li>
+                            </ul>                 
+                    </li>
+                    <li><a href="#">HOME</a>
+                      <!-- <ul>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                            </ul>  -->                      
+                    </li>
+                    <li><a href="#">CONTACT</a>
+                      <!-- <ul>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                            </ul>   -->                 
+                    </li>
+                    <li><a href="#">ABOUT</a>
+                      <!--  <ul>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                                <li><a href="#">siva</a></li>
+                            </ul> -->                   
+                    </li>
+                </ul>
+
+    
+            </div>
+        </nav>
+        <section>
+         <!--   <nav class="navi">
+                    <ul>
+                            <li><a href="#">siva</a></li>
+                            <li><a href="#">siva</a></li>
+                            <li><a href="#">siva</a></li>
+                            <li><a href="#">siva</a></li>
+                            <li><a href="#">siva</a></li>
+                        </ul>   --> 
+
+            </nav><br><br>
+            <article>
+                <br><br>
+                <h3 style="text-align: center;color:red;" >LOGIN</h3>
+                <form action="E:\ui practies\sbi2.html">
+                <label for="USRENAME">User name</label>
+                <input type="text" id="USRENAME" placeholder="User name"><br><br>
+                <label for="Password">Password</label>
+                <input type="password" id="Password" placeholder="Password"><br><br>
+                <button onclick="f1()" id="button1">click on me</button>
+            </form>
+            </article>
+            <p id="aboutbank">   The A New Bank of India (ANBI) is an Indian multinational, public sector banking and financial services statutory body. It is a government corporation statutory body headquartered in Mumbai, Maharashtra. SBI is ranked as 216th in the Fortune Global 500 list of the world's biggest corporations of 2018. It is the largest bank in India with a 23% market share in assets, besides a share of one-fourth of the total loan and deposits market.[5][6]
+
+                The bank descends from the Bank of Calcutta, founded in 1806, via the Imperial Bank of India, making it the oldest commercial bank in the Indian subcontinent. The Bank of Madras merged into the other two "presidency banks" in British India, the Bank of Calcutta and the Bank of Bombay, to form the Imperial Bank of India, which in turn became the State Bank of India in 1955.[7] The Government of India took control of the Imperial Bank of India in 1955, with Reserve Bank of India (India's central bank) taking a 60% stake, renaming it the State Bank of India.</p>
+        </section>
+            <marquee behavior="" direction="" id="marquee1">For better control & security of your account. you can lock or unlock your INB access/login page               
+            </marquee>
+        
+        
+                    
+    </body>
+</html>

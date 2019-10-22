@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registation Details</title>
+        <style>
+            #title{
+                width: 500px;
+                height: 100px;
+                text-align: center;
+                color: red;
+                
+            }
+            #main{
+                
+                border-style: solid;
+                border-color: wheat;
+                width: 1000px;
+                height: 400px;
+                margin-left: 300px;
+
+            }
+            body{
+                background-color:rgb(91, 169, 241)
+            }
+            #form{
+                margin: 50px;
+                margin-left: 400px;
+            }
+            #next{
+                text-align: center;
+            }
+        
+        
+        
+        
+        
+        </style>
+
+nb     </head>
+    <body>
+        <div id="title">
+            <h1>Registation Details</h1>
+        </div>
+        <div id="main">
+            <form action="" id="form">
+
+            <label for="university">University  :</label>&nbsp;&nbsp;
+            <input type="text" class="university"> <br><br>
+            <label for="institute">institute    :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" class="institute"> <br><br>
+            <label for="branch">Branch  :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="branch" id="branch" >
+            <option value="select">--Select--</option>
+            <option value="ece">ECE</option>
+            <option value="ece">CSC</option>
+            <option value="ece">EEE</option>
+            <option value="ece">MECH</option>
+            <option value="ece">AUTO</option>
+
+        </select> <br><br>
+        <label for="degree">Degree  :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="degree" id="degree">
+            <option value="select">--Select--</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="B.E">BE</option>
+            <option value="BSC">BSC</option>
+            <option value="Bcom">Bcom</option>
+            <option value="M.Tech">M.Tech</option>
+
+         </select>
+                <input type="radio" value="radio">Pursuing</input>
+                <input type="radio" value="radio">Completed</input><br><br>
+                <label for="avg">Average CPI</label>
+                <input type="number" class="avg" value=" " min="0" max="10" step="1"> &nbsp;&nbsp;
+                <label for="upto">Upto</label>
+                <input type="number"  class="upto" value=" " min="0" max="10" step="1">The Semister</input><br><br>
+                <label for="experience">Experience:</label>
+                <input type="number"  class="experience" value=" " min="0" max="10" step="1">Years</input><br><br>
+                <label for="website">Your Website or Blog:</label>
+                <input type="text" class="website" value="http://"> <br><br>
+
+    </div>
+    <div id="next">
+        <a href="#"> Next  </a>
+    </div>
+    </form>
+    </body>
+</html>
